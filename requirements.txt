@@ -1,0 +1,2 @@
+# This is a pypandoc wrapper, so it needs pypandoc.
+pypandoc == 1.15
