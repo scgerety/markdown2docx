@@ -10,7 +10,7 @@ def convert_md(markdown, stem_name):
     pypandoc.convert_file(markdown, "docx", outputfile=f"{stem_name}.docx")
 
 def main(directory=dir_path):
-    for filename in glob.glob(f"{directory}\\*.md"):
+    for filename in glob.glob(f"{directory}/*.md"):
         _, f_ext = os.path.split(filename)
         name, _ = os.path.splitext(f_ext)
         convert_md(filename, f"{os.path.join(WORD_DIR, name)}")
